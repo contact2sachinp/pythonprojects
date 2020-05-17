@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1> Users from appTwo...</h1>
+            <form method="POST">
+                {{ form.as_p }}
+                {% csrf_token %}
+                <input type="submit", value="Submit" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+
+    <!--
+    {% if users %}
+        <ol>
+            {% for person in users %}
+                <li>User Info</li>
+                    <ul>
+                        <li>Fist Name: {{ person.first_name}}</li>
+                        <li>Last Name: {{ person.last_name}}</li>
+                        <li>Email    : {{ person.email}}</li>
+                    </ul>
+            {% endfor %}
+        </ol>
+    {% endif %}
+    -->
+</body>
+</html>

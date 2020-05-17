@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% load mytemplates %}
+{% block body_block %}
+     <h1>WELCOME TO INDEX!</h1>
+     {{ text|cutCustom:"World" }}
+     {{ number|add:"455" }}
+{% endblock %}
+<!--
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>WELCOME TO INDEX!</h1>
+
+</body>
+</html>-->
