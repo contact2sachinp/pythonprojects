@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sachin's Profile</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Resume/CV／Portfolio Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="{% static 'plugins/font-awesome/css/font-awesome.css' %}">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="{% static 'css/styles-14.css' %}">
+    <link id="theme-style" rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+    <link href="http://cdn.pydata.org/bokeh/release/bokeh-2.0.2.min.css" rel="stylesheet" type="text/css">
+    <link href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-2.0.2.min.css" rel="stylesheet" type="text/css">
+
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-2.0.2.min.js"></script>
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-2.0.2.min.js"></script>
+    {{ script | safe }}
+    {{ script2 | safe }}
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="page-nav-space-holder hidden-xs">
+            <div id="page-nav-wrapper" class="page-nav-wrapper text-center">
+                <div class="container">
+                    <ul id="page-nav" class="nav page-nav list-inline">
+                        <li><a class="scrollto" href="#experiences-section">Experiences</a></li>
+                        <li><a class="scrollto" href="#skills-section">Skills</a></li>
+                        <li><a class="scrollto" href="#portfolio-section">Portfolio</a></li>
+                        <li><a class="scrollto" href="#contact-section">Contact</a></li>
+                        <li><a class="" href="{% url 'admin:index' %}">Admin</a></li>
+                    </ul><!--//page-nav-->
+                </div>
+            </div><!--//page-nav-wrapper-->
+        </div>
+
+    </header><!--//header-->
+
+    <div class="wrapper container">
+
+
+
+        <section id="portfolio-section" class="portfolio-section section">
+            <h2 class="section-title">TITANIC</h2>
+            <div class="items-wrapper isotope row">
+                <div class="item backend frontend col-md-4 col-xs-8 ">
+                    <div class="item-inner">
+                        <div class="content text-left">
+                            {{ div | safe }}
+                            <h3 class="sub-title">Titanic Analysis</h3>
+                        </div><!--//content-->
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+
+                <div class="item backend frontend col-md-4 col-xs-8 ">
+                    <div class="item-inner">
+                        <div class="content text-left">
+                            {{ div2 | safe }}
+                            <h3 class="sub-title">Titanic Analysis</h3>
+                        </div><!--//content-->
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+
+
+
+                <div class="item backend frontend col-md-4 col-xs-8 ">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-responsive" src="{% static 'images/portfolio/p2.jpg' %}" alt="" />
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="https://medium.com/@mehulkothari05/smart-baby-stroller-system-3f6b4f49476a">Smart Baby Stroller System</a></h3>
+                            <div class="meta"><u>Technology used :Python, Machine Learning, IOT, Android Studio</u><br><br>
+                                Parent can do live streaming with their child at any moment whenever they want
+                                · Also can track the emotions of baby and can take possible actions
+                                · Provided sensors can track all information about weather
+                                · On the basis of information of weather, this app can be integrated with IOT to take possible actions such as activate AC
+                                </div>
+                            
+                            
+                            <div class="action"><a href="https://medium.com/@mehulkothari05/smart-baby-stroller-system-3f6b4f49476a">Closed source</a></div>
+                        </div><!--//content-->
+                        <a class="link-mask" href="https://medium.com/@mehulkothari05/smart-baby-stroller-system-3f6b4f49476a"></a>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item backend frontend col-md-4 col-xs-8 ">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-responsive" src="{% static 'images/portfolio/p3.png' %}" alt="" />
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="https://medium.com/@mehulkothari05/matrimonial-website-9cd5247f477d">Matrimonial Website</a></h3>
+                            <div class="meta"><u>Technology used : Coding in PHP, MYSQL,HTML ,CSS ,JavaScript</u><br><br>
+                                As you will visit the homepage you will get what it is. It is a matrimonial website for Brahman Parivar or samaj where young and adult people of brahman samaj can register themselves on this site with the proper and correct details.
+                                Then they have to approve them self and can search for their soulmate.</div>
+                                <br>
+                            
+                            <div class="action"><a href="https://medium.com/@mehulkothari05/matrimonial-website-9cd5247f477d"> source:Medium</a></div>
+                        </div><!--//content-->
+                        <a class="link-mask" href="https://medium.com/@mehulkothari05/matrimonial-website-9cd5247f477d"></a>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+
+        </section><!--//section-->
+
+
+    </div><!--//wrapper-->
+
+    <footer class="footer text-center">
+        <div class="container">
+            <small class="copyright">Copyright @ <a href="#">Sachin Patil </a></small>
+        </div><!--//container-->
+    </footer>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="{% static 'plugins/jquery-1.12.4.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'plugins/back-to-top.js' %}"></script>
+    <script type="text/javascript" src="{% static 'plugins/jquery-scrollTo/jquery.scrollTo.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'plugins/easy-pie-chart/src/easypiechart.js' %}"></script>
+    <script type="text/javascript" src="{% static 'plugins/easy-pie-chart/src/jquery.plugin.js' %}"></script>
+    <script type="text/javascript" src="{% static 'plugins/easy-pie-chart/src/renderer/canvas.js' %}"></script>
+    <script type="text/javascript" src="{% static 'plugins/imagesloaded.pkgd.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'plugins/isotope.pkgd.min.js' %}"></script>
+
+    <!-- custom js -->
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

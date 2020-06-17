@@ -67,6 +67,7 @@
                         <!-- sachin <li><a class="scrollto" href="#testimonials-section">Testimonials</a></li> -->
                         <li><a class="scrollto" href="#portfolio-section">Portfolio</a></li>
                         <li><a class="scrollto" href="#contact-section">Contact</a></li>
+                        <li><a class="" href="{% url 'admin:index' %}">Admin</a></li>
                     </ul><!--//page-nav-->
                 </div>
             </div><!--//page-nav-wrapper-->
@@ -146,28 +147,37 @@ Extensive experience in</p>
                 <div class="row">
                     <div class="item col-xs-12 col-sm-4">
                         <div class="item-inner">
-                            <h4 class="skill-name">Python &amp; Django</h4>
-                            <div class="level">Medium, 1 years</div>
+                            <h4 class="skill-name">Python</h4>
+                            <div class="level">Advanced, 10 years</div>
                             <div class="desc">
-                                I've been working with django and python from 1 year, developing technologies from standalone application.Also coompleted final year project on python and IOT using some automation
+                                Yet to complete the details.
                             </div>
                         </div><!--//item-inner-->
                     </div><!--//item-->
                     <div class="item col-xs-12 col-sm-4">
                         <div class="item-inner">
-                            <h4 class="skill-name">Java</h4>
-                            <div class="level">Medium, 2 years</div>
+                            <h4 class="skill-name">Django Framework</h4>
+                            <div class="level">Medium, 1 years</div>
                             <div class="desc">
-                                Started as a hobbie,Then it was a mandatory course in B.E sem 5 .Then comleted various projects in academics and some projects as assignment on online platforms.
+                                I've been working with django and python from 1 year, developing technologies from standalone application.
+                            </div>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-xs-12 col-sm-4">
+                        <div class="item-inner">
+                            <h4 class="skill-name">Front Arena</h4>
+                            <div class="level">Advanced, 8 years</div>
+                            <div class="desc">
+                                Front Arena Consultant. Integration with Upstram/Downstream systems. Reports generation, AEF base customization.
                             </div>
                         </div><!--//item-inner-->
                     </div><!--//item-->
                     <div class="item col-xs-12 col-sm-4">
                         <div class="item-inner">
                             <h4 class="skill-name">HTML5,CSS,Javascript</h4>
-                            <div class="level">Advanced, 5 years</div>
+                            <div class="level">Beginner, 6 months</div>
                             <div class="desc">
-                                I've been working with web technologies  since 2 years, when I got my first live project to make matrimonial website from my HOD<br> <b>Mr. Sagar Patel</b>.My Worsksample is  <br> <a href="http://www.brahmanvarvadhusuchak.com">My Matrimonial Website</a>
+                                I've am working with web technologies.
                             </div>
                         </div><!--//item-inner-->
                     </div><!--//item-->
@@ -177,23 +187,21 @@ Extensive experience in</p>
             <div class="other-skills">
                 <h3 class="subtitle">Other Skills</h3>
                 <div class="misc-skills">
-                    <span class="skill-tag">HTML5</span>
-                    <span class="skill-tag">CSS3</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Django Framework</span>
+                    <span class="skill-tag">Data Visualization</span>
                     <span class="skill-tag">C</span>
                     <span class="skill-tag">C++</span>
                   
                     <br>
-                    
-                    <span class="skill-tag">Android</span>
-                    <span class="skill-tag">MYSQL</span>
-                    <span class="skill-tag">Firebase</span>
+
+                    <span class="skill-tag">NumPy</span>
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">Seaborn</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">MySQL</span>
                     <span class="skill-tag">Git</span>
-                   
-                    
-                    <span class="skill-tag">Angular JS</span>
-                    <span class="skill-tag">IDS</span>
+
                 </div>
             </div><!--//other-skills-->
 
@@ -271,19 +279,19 @@ Extensive experience in</p>
                 <div class="item backend col-md-4 col-xs-8 ">
                     <div class="item-inner">
                         <figure class="figure">
-                            <img class="img-responsive" src="{% static 'images/portfolio/p4.png' %}" alt="" />
+                            <img class="img-responsive" src="{% static 'images/titanic/titanic.jpg' %}" alt="" />
                         </figure>
                         <div class="content text-left">
-                            <h3 class="sub-title"><a href="#">Personal portfolio</a></h3>
+                            <h3 class="sub-title"><a href="{% url 'base:titanic' %}">Titanic</a></h3>
                             <div class="meta"><u> Python,Django, HTML,CSS,Javascript</u><br><br>
-                                This is a project for my personal portfolio using Django
-                                This is m first project on Django after Blog app
-                                <br>Also I have taken reference for this project from udemy.</div>
+                                This is a project for my personal portfolio using Django for Data Visualization.
+                                <br>Reference for this project from udemy.
+                            </div>
                             <br><br><br><br><br>
                             <div class="meta"></div>
-                            <div class="action"><a href="https://github.com/ErickAgrazal/portfolio">View on Github</a></div>
+                            <div class="action"><a href="https://github.com/contact2sachinp">View on Github</a></div>
                         </div><!--//content-->
-                        <a class="link-mask" href="#"></a>
+                        <a class="link-mask" href="{% url 'base:titanic' %}"></a>
                     </div><!--//item-inner-->
                 </div><!--//item-->
 
@@ -333,24 +341,22 @@ doctors and lab technician and buy medicine online.<br>
         <section id="contact-section" class="contact-section section">
             <h2 class="section-title">Get in Touch</h2>
             <div class="intro">
-                <img class="profile-image" src="{% static 'images/mk2.jpeg' %}" alt="Mehul's profile image">
+                <img class="profile-image" src="{% static 'images/Sachin_Photo2.jpeg' %}" alt="Sachin's profile image">
                 <div class="dialog">
-                    <p>I'm currently working fulltime as ASTE for <a href="http://allsafe.com.pa" target='_blank'>TATA Consultancy Services</a>, but I'm always open to new opportunities that let me help as much as I can on other projects.</p>
+                    <p>Currently working fulltime as Senior Consultant for <a href="https://www.fisglobal.com/" target='_blank'>FIS</a>, I'm always open to new opportunities that let me help as much as I can on other projects.</p>
                     <p><strong>I can help with the following:</strong></p>
                     <ul class="list-unstyled service-list">
-                        <li><i class="fa fa-check" aria-hidden="true"></i> Back-end development with Django/Python,PHP</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i> Front-end development with HTML5 , CSS , JS,Angular JS </li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i> Android Application development</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Back-end development with Django/Python</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Front-end development with HTML5 , CSS , JS, Angular JS </li>
                         <li><i class="fa fa-check" aria-hidden="true"></i> Web applications</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i> Publishing Webites on Servers </li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Uploading Your Code To GIthub</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Uploading Your Code To GIthub</li>
                     </ul>
-                    <p>Drop me a line at <a href="mailto:tonarsystem564@gmail.com">mehulkothari05@gmail.com</a> or call me at <a href="tel:+919974990993">+919974990993</a></p>
+                    <p>Drop me a line at <a href="mailto:contact2sachinp@gmail.com">contact2sachinp@gmail.com</a> or call me at <a href="tel:+919881157738">+918981157738</a></p>
                     <ul class="social list-inline">
-                            <li><a href="https://www.linkedin.com/in/mehul-kothari-765868126/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li><a href="https://twitter.com/MehulKo18943279"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/sachinspatil/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                             <li><a href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                            <li><a href="https://github.com/mehulk05"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/contact2sachinp"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
                     </ul><!--//social-->
                 </div><!--//diaplog-->
             </div><!--//intro-->
@@ -361,7 +367,7 @@ doctors and lab technician and buy medicine online.<br>
 
     <footer class="footer text-center">
         <div class="container">
-            <small class="copyright">Copyright @ <a href="#">Mehul Kothari </a></small>
+            <small class="copyright">Copyright @ <a href="#">Sachin Patil </a></small>
         </div><!--//container-->
     </footer>
 

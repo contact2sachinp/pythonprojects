@@ -78,3 +78,18 @@ class HomeView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(HomeView, self).get_context_data(**kwargs)
         return context
+
+from plots import views as plotViews
+class TitanicView(TemplateView):
+    template_name = "titanic/titanic.html"
+
+    def get_context_data(self, **kwargs):
+        context = super(TitanicView, self).get_context_data(**kwargs)
+        script, div = plotViews.simplePlot()
+        script2, div2 = plotViews.simplePlotTwo()
+        context['script'] = script
+        context['script2'] = script2
+        context['div'] = div
+        context['div2'] = div2
+        return context
+
